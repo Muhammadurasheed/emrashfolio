@@ -362,13 +362,13 @@ main {
 @media (max-width: 480px) {
 
   .avatar-box {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .avatar-box img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 16px;
   }
 }
@@ -1083,11 +1083,13 @@ main {
 
 .tool-icon {
   flex-shrink: 0;
+  border-radius: 16;
 }
 
 .tool-image {
   width: 50px;
   height: 48px;
+  border-radius: 16;
 }
 
 @media (max-width: 600px) {
