@@ -8,7 +8,7 @@ export const education = [
   },
   {
     id: 2,
-    title: "Lagos State Model College, Igbonla",
+    title: "Demonstration Standard College, Kogi",
     entry_year: "2012",
     final_year: "2018",
     text: "High school",
@@ -34,22 +34,7 @@ export const experience = [
     final_year: "Date Not Specified",
     text: `• Optimized a machine learning pipeline for a retail client, resulting in a 30% increase in sales and a 20% reduction in inventory costs.`,
   },
-  {
-    id: 3,
-    title: "Graphic Designer",
-    entry_year: "Sep 2022",
-    final_year: "Present",
-    company: "Revive Digital Solutions (Part-time)",
-    text: ``,
-  },
-  {
-    id: 4,
-    title: "Frontend Developer Intern",
-    entry_year: "Sep 2022",
-    final_year: "Dec 2022",
-    company: "Zuri Team",
-    text: ``,
-  },
+  
 ];
 
 
