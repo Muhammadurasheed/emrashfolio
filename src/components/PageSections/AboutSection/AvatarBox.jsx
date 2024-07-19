@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emrash from "../../../assets/images/emrash.jpg";
+import emrash from "../../../assets/images/emrash.png";
 
 const AvatarBox = ({ isActive, setIsActive }) => {
   return (
