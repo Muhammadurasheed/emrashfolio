@@ -359,6 +359,19 @@ main {
   border-radius: 16px;
   object-fit: cover;
 }
+@media (max-width: 480px) {
+
+  .avatar-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+  }
+}
 
 .info-content .name {
   color: var(--white-2);
@@ -478,6 +491,7 @@ main {
 .social-item .social-link:hover {
   color: var(--light-gray);
 }
+
 
 /*-----------------------------------*\
   #NAVBAR
