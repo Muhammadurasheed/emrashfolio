@@ -1,1 +1,9 @@
-/*    /index.html   200
+{
+    "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/",
+            "status": 200
+        }
+    ]
+}
