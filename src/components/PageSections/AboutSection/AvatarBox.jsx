@@ -11,7 +11,7 @@ const AvatarBox = ({ isActive, setIsActive }) => {
       <div className='info-content'>
         <h1 className='name'>Rasheed Yekini</h1>
 
-        <p className='title'>Software Engineer</p>
+        <p className='title'>AI/ML Engineer</p>
       </div>
 
       <button

@@ -12,7 +12,7 @@ const Services = () => {
           return (
             <FadeIn key={id}>
               <li className='service-item'>
-                <div className='service-icon-box'>
+                <div className='service-icon-box' >
                   <img src={image} alt={title} width='40' />
                 </div>
 

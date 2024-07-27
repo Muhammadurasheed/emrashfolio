@@ -112,10 +112,10 @@ const Projects = () => {
             <p>{selectedProject.fullDescription}</p>
             <div className='project-buttons'>
               <a href={selectedProject.projectURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
-                View Project
+                Download Apk
               </a>
               <a href={selectedProject.modelURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
-                Link to Model
+               Model Github Link
               </a>
             </div>
           </div>
