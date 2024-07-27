@@ -1,108 +1,66 @@
 /* Projects.css */
 
-.projects {
-    padding: 20px;
-  }
-  
-  .project-category-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .project-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .project-item {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .project-item:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .project-title {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  .project-description {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .project-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .form-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: var(--jet);
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 90%;
-    max-width: 600px;
-    position: relative;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #ff0000;
-    color: white;
-    border: none;
+    width: 100%;
+    max-width: 90%;
     padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 20px;
   }
-  
-  .project-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+
+  .close {
+    padding: 8px;
+    font-size: 18px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 5px;
+  }
+
+  .close {
+    padding: 6px;
+    font-size: 16px;
+  }
+}

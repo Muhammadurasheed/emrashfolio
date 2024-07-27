@@ -3,7 +3,7 @@ import FadeIn from "../../FadeIn";
 import healthify from '../../../assets/project-images/healthify.jpeg';
 import notchAI from '../../../assets/project-images/notchAI.jpeg';
 import inopLearn from '../../../assets/project-images/inopLearn.jpeg';
-
+import './Projects.css';
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
