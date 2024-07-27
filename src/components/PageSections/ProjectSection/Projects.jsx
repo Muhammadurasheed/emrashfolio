@@ -12,7 +12,7 @@ const Projects = () => {
       id: 1,
       name: "Healthify",
       category: "AI Powered Apps",
-      projectURL: "https://example.com/project-one",
+      projectURL: "https://drive.google.com/file/d/1f-Ufx0blkoPn8iDk04PaF1M3NPLznudL/view?usp=drive_link",
       demoURL: "https://example.com/demo-one",
       modelURL: "https://example.com/model-one",
       description: "AI-powered app integrated with fitness tracker to detect early heart stroke.",
