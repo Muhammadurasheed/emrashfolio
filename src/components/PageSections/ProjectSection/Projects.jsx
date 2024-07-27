@@ -1,86 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import FadeIn from "../../FadeIn";
 import healthify from '../../../assets/project-images/healthify.jpeg';
 import notchAI from '../../../assets/project-images/notchAI.jpeg';
 import inopLearn from '../../../assets/project-images/inopLearn.jpeg';
-import shopflex from '../../../assets/project-images/shopflex.jpeg';
-import wellness from '../../../assets/project-images/wellness.png';
-import wiselypay from '../../../assets/project-images/wiselypay.jpeg';
-import smarvium from '../../../assets/project-images/smarvium.jpeg';
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   const projects = [
     {
       id: 1,
       name: "Healthify",
-      category: "Mobile App",
+      category: "AI Powered Apps",
       projectURL: "https://example.com/project-one",
       demoURL: "https://example.com/demo-one",
+      modelURL: "https://example.com/model-one",
       description: "AI-powered app integrated with fitness tracker to detect early heart stroke.",
+      fullDescription: "Healthify is an innovative application that leverages AI to monitor health metrics through fitness trackers and detect early signs of heart strokes. The app provides real-time alerts and suggestions for maintaining heart health.",
       imageURL: healthify,
     },
     {
       id: 2,
       name: "NotchAI",
-      category: "Mobile App",
+      category: "AI Powered Apps",
       projectURL: "https://example.com/project-two",
       demoURL: "https://example.com/demo-two",
-      description: "An AI-powered to detect skin diseases and recommend solution.",
+      modelURL: "https://example.com/model-two",
+      description: "An AI-powered app to detect skin diseases and recommend solutions.",
+      fullDescription: "NotchAI uses advanced AI algorithms to analyze skin conditions and provide accurate diagnoses. The app recommends personalized treatment plans and connects users with dermatologists for further consultation.",
       imageURL: notchAI,
     },
     {
       id: 3,
       name: "InopLearn",
-      category: "Mobile App",
+      category: "AI Powered Apps",
       projectURL: "https://example.com/project-three",
       demoURL: "https://example.com/demo-three",
+      modelURL: "https://example.com/model-three",
       description: "An e-learning platform for visually impaired people.",
+      fullDescription: "InopLearn is an accessible e-learning platform designed to assist visually impaired individuals in their education. It features AI-driven tools that convert text to speech, provide interactive learning modules, and offer real-time support.",
       imageURL: inopLearn,
-    },
-    {
-      id: 4,
-      name: "Shopflex",
-      category: "Mobile App",
-      projectURL: "https://example.com/project-four",
-      demoURL: "https://example.com/demo-four",
-      description: "A multivendor app for flexible shopping experiences.",
-      imageURL: shopflex,
-    },
-    {
-      id: 5,
-      name: "Wellness",
-      category: "Web Development",
-      projectURL: "https://wellness.pipeops.app/",
-      demoURL: "https://example.com/demo-five",
-      description: "Hospital facility management application.",
-      imageURL: wellness,
-    },
-    {
-      id: 6,
-      name: "WiselyPay",
-      category: "Mobile App",
-      projectURL: "https://example.com/project-six",
-      demoURL: "https://example.com/demo-six",
-      description: "A mobile app for easy and secure payments.",
-      imageURL: wiselypay,
-    },
-    {
-      id: 7,
-      name: "Smarvium",
-      category: "Web Development",
-      projectURL: "https://smarvium.onrender.com/",
-      demoURL: "",
-      description: "Boost farmers productivity and reduce food wastage",
-      imageURL: smarvium,
-    },
-    {
-      id: 8,
-      name: "Save Persona",
-      category: "Mobile App",
-      projectURL: "https://example.com/project-seven",
-      demoURL: "https://example.com/demo-seven",
-      description: "A web application for smart home management.",
-      imageURL: smarvium,
     },
   ];
 
@@ -90,6 +49,14 @@ const Projects = () => {
     return acc;
   }, {});
 
+  const openModal = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section className='projects'>
       {Object.keys(categorizedProjects).map(category => (
@@ -97,7 +64,7 @@ const Projects = () => {
           <h3 className='project-category-title'>{category}</h3>
           <ul className='project-list'>
             {categorizedProjects[category].map(project => {
-              const { id, name, projectURL, demoURL, description, imageURL } = project;
+              const { id, name, demoURL, description, imageURL } = project;
               return (
                 <FadeIn key={id}>
                   <li className='project-item active'>
@@ -105,15 +72,14 @@ const Projects = () => {
                       <img src={imageURL} alt={name} loading='lazy' />
                     </figure>
                     <h3 className='project-title'>{name}</h3>
-                    {/* <p className='project-category'>{category}</p> */}
                     <p className='project-description'>{description}</p>
                     <div className='project-buttons'>
                       <a href={demoURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
                         Demo
                       </a>
-                      <a href={projectURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
-                        {category === "Web Development" ? "View Live" : "APK file"}
-                      </a>
+                      <button onClick={() => openModal(project)} className='form-btn'>
+                        More Info
+                      </button>
                     </div>
                   </li>
                 </FadeIn>
@@ -122,6 +88,39 @@ const Projects = () => {
           </ul>
         </div>
       ))}
+      {selectedProject && (
+        <div className='modal'>
+          <div className='modal-content'>
+            <span
+              className='close'
+              style={{
+                color: '#ff0000',
+                padding: '5px',
+                backgroundColor: 'white',
+                fontSize: '25px',
+                cursor: 'pointer',
+                position: 'absolute'
+
+              }}
+              onClick={closeModal}
+            >
+              &times;
+            </span>
+            <br />
+            <br />
+            <h2  className='modal-project-title'>{selectedProject.name}</h2>
+            <p>{selectedProject.fullDescription}</p>
+            <div className='project-buttons'>
+              <a href={selectedProject.projectURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
+                View Project
+              </a>
+              <a href={selectedProject.modelURL} className='form-btn' target='_blank' rel='noopener noreferrer'>
+                Link to Model
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -21,20 +21,37 @@ export const experience = [
     title: "Machine Learning Engineering Intern",
     company: "Bank of America",
     entry_year: "Aug 2022",
-    final_year: "Dec 2022",  
+    final_year: "Dec 2022",
     text: `• Analyzed a large dataset of customer behavior to identify patterns and trends, leading to the development of a personalized recommendation system that increased click-through rates by 20% and revenue by 10%.
 • Developed and maintained a machine learning pipeline for real-time data processing, resulting in a 50% reduction in data processing time and improved system efficiency.
 • Researched and evaluated new machine learning technologies, leading to the adoption of a state-of-the-art deep learning framework that improved model performance by 15%.`,
   },
   {
     id: 2,
-    title: "Machine Learning Engineering Contract work",
-    company: "Mani Bakes",
-    entry_year: "Date Not Specified",
-    final_year: "Date Not Specified",
-    text: `• Optimized a machine learning pipeline for a retail client, resulting in a 30% increase in sales and a 20% reduction in inventory costs.`,
+    title: "Machine Learning Computer Vision Engineer",
+    company: "Computing Minds -Contract Work",
+    entry_year: "Feb 2023",
+    final_year: "August 2023",
+    text: `• Gathered a comprehensive dataset of medical images, including histopathological slides, mammograms, and radiological scans. These images are annotated with information about the presence or absence of cancer cells.
+• Researched and implemented a fine-tuned Yolov4 object detector model to detect cancer cells with 90% accuracy.
+• Implemented DeepSort technique for object tracking to track cancer cells with 95% accuracy.
+• Deployed the trained deep learning model for practical application, integrated into a healthcare system. This enables real-time or batch analysis of medical images for cancer cell detection.`,
   },
-  
+  {
+    id: 3,
+    title: "Machine Learning Computer Vision Engineer",
+    company: "Roxanne.ai - Freelance",
+    text: `• Worked on 2 computer vision real-world projects:
+<1>-Waste in the Street Photo Detection:
+• Implemented a SSD-based object detector model to detect waste in streets with accuracy over 90%.
+• Created an automated system that processed images and flagged those containing street waste, enabling faster and more efficient waste detection.
+• Developed sophisticated pipelines to automate and streamline the deep learning training process, enhancing efficiency and accelerating model development.
+
+<2>-Hyperboles in Radargram Detection:
+• Designed a system that effectively detected hyperbolic patterns in radargram images.
+• Demonstrated proficiency in radar data analysis, including data preprocessing, signal identification, and real-time processing.
+• Trained the deep learning model using a well-annotated dataset, ensuring the model learned to recognize relevant patterns.`,
+  },
 ];
 
 
@@ -52,7 +69,7 @@ export const skills = [
     progress: "88",
   },
   {
-    skill: "Knowledge of deep learning frameworks",
+    skill: "Knowledge of deep learning frameworks (TensorFlow, Keras, PyTorch)",
     progress: "87",
   },
   {
@@ -60,20 +77,8 @@ export const skills = [
     progress: "86",
   },
   {
-    skill: "Strong collaboration and teamwork skills",
+    skill: "Experience in computer vision applications (OpenCV, YOLO, Mask RCNN)",
     progress: "80",
-  },
-  {
-    skill: "Experience in customer churn prediction and fraud detection",
-    progress: "83",
-  },
-  {
-    skill: "Ability to analyze customer feedback data for product improvement",
-    progress: "85",
-  },
-  {
-    skill: "Experience in developing personalized recommendation systems",
-    progress: "85",
   },
   {
     skill: "Proficiency in real-time data processing",
@@ -89,15 +94,23 @@ export const skills = [
   },
   {
     skill: "Ability to integrate models into production systems",
-    progress: "87",
+    progress: "83",
   },
   {
-    skill: "Knowledge of data visualization tools",
+    skill: "Knowledge of data visualization tools (Matplotlib, Pandas, SciPy)",
     progress: "82",
   },
   {
-    skill: "Experience with cloud platforms like AWS, Google Cloud, or Azure",
+    skill: "Experience with cloud platforms like AWS and GCP",
     progress: "85",
+  },
+  {
+    skill: "Proficiency in Python",
+    progress: "90",
+  },
+  {
+    skill: "Experience in data science and teaching",
+    progress: "80",
   },
 ];
 

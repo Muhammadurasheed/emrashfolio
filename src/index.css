@@ -975,6 +975,11 @@ main {
   font-weight: bold;
 }
 
+.modal-project-title {
+  font-size: 1.5rem;
+  color: var(--vegas-gold);
+}
+
 .project-category {
   font-size: 1rem;
   color: var(--light-gray);
@@ -1001,6 +1006,7 @@ main {
   .project-title {
     font-size: 1rem;
   }
+
 
   .project-category {
     font-size: 0.9rem;
