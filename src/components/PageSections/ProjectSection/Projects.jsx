@@ -14,7 +14,7 @@ const Projects = () => {
       category: "AI Powered Apps",
       projectURL: "https://drive.google.com/file/d/1f-Ufx0blkoPn8iDk04PaF1M3NPLznudL/view?usp=drive_link",
       demoURL: "https://example.com/demo-one",
-      modelURL: "https://example.com/model-one",
+      modelURL: "https://github.com/Muhammadurasheed/stroke-prediction-model.git",
       description: "AI-powered app integrated with fitness tracker to detect early heart stroke.",
       fullDescription: "Healthify is an innovative application that leverages AI to monitor health metrics through fitness trackers and detect early signs of heart strokes. The app provides real-time alerts and suggestions for maintaining heart health.",
       imageURL: healthify,
