@@ -35,7 +35,7 @@ const Projects = () => {
       name: "InopLearn",
       category: "AI Powered Apps",
       projectURL: "https://play.google.com/store/apps/details?id=com.nnatech.inop_learn&pcampaignid=web_share",
-      demoURL: "https://example.com/demo-three",
+      demoURL: "https://drive.google.com/file/d/17YdN2Hl1mrAUbQu_Q1CIt7SqHwainxWj/view?usp=drive_link",
       modelURL: "https://example.com/model-three",
       description: "An e-learning platform for visually impaired people.",
       fullDescription: "InopLearn is an accessible e-learning platform designed to assist visually impaired individuals in their education. It features AI-driven tools that convert text to speech, provide interactive learning modules, and offer real-time support.",
