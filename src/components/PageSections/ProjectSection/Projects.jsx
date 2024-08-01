@@ -23,7 +23,7 @@ const Projects = () => {
       id: 2,
       name: "NotchAI",
       category: "AI Powered Apps",
-      projectURL: "https://drive.google.com/file/d/1eYzGV1M-DU8VjbD_OpMAhlTevrY-EECF/view?usp=sharing",
+      projectURL: "https://drive.google.com/file/d/1_LN1Hh8RpNYyo630OaMT2bHOsPsdBAlE/view?usp=sharing",
       demoURL: "https://drive.google.com/file/d/1g0Iw645KxBo-WmolsUS3XDzkwg8F4z75/view?usp=sharing",
       modelURL: "https://github.com/Muhammadurasheed/notchAI-deep-learnig-model",
       description: "An AI-powered app to detect skin diseases and recommend solutions.",
