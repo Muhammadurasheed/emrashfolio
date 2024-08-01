@@ -557,7 +557,7 @@ main {
  * #service 
  */
 
-.service {
+ .service {
   margin-bottom: 35px;
 }
 
@@ -600,9 +600,6 @@ main {
 .service-content-box {
   text-align: center;
 }
-.special-box {
-  
-}
 
 .service-item-title {
   margin-bottom: 7px;
@@ -614,6 +611,31 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-icon-box img {
+    width: 30px;
+  }
+
+  .service-item-title {
+    font-size: var(--fs-5);
+  }
+
+  .service-item-text {
+    font-size: var(--fs-7);
+  }
+}
+
 
 /**
  * #testimonials 

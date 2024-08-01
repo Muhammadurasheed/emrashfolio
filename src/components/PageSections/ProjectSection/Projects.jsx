@@ -24,7 +24,7 @@ const Projects = () => {
       name: "NotchAI",
       category: "AI Powered Apps",
       projectURL: "https://example.com/project-two",
-      demoURL: "https://example.com/demo-two",
+      demoURL: "https://drive.google.com/file/d/1g0Iw645KxBo-WmolsUS3XDzkwg8F4z75/view?usp=sharing",
       modelURL: "https://github.com/Muhammadurasheed/notchAI-deep-learnig-model",
       description: "An AI-powered app to detect skin diseases and recommend solutions.",
       fullDescription: "NotchAI uses advanced AI algorithms to analyze skin conditions and provide accurate diagnoses. The app recommends personalized treatment plans and connects users with dermatologists for further consultation.",
