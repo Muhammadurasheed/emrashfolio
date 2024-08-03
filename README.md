@@ -7,15 +7,15 @@ This is my portfolio website! It showcases my skills, experiences, and projects 
 This website is built using the following technologies:
 
 - React
-- Netlify for hosting
+- Vercel for hosting
 
 ## Features
 
 - Home/About page: introduces myself and provides a brief overview of my skills and interests.
-- Portfolio page: displays my past and current projects with descriptions, screenshots, and links to live demos or repositories.
+- Project page: displays my past and current projects with descriptions and links to live demos, repositories and APK/playstore links.
 - Contact page: provides a contact form to send me a message or connect with me on social media.
 
-The Home/About page also lists my technical skills and programming languages with proficiency levels.
+The Resume page lists my technical skills and programming languages with proficiency levels.
 
 ### Live chat
 
@@ -23,7 +23,7 @@ A feature that allows visitors to interact with me live and get answers to quest
 
 ## Getting started
 
-Click on -> [my portfolio](https://codewithyinka.netlify.app) to view the website on any web browser.
+Click on -> [my portfolio](https://mrash.vercel.app/) to view the website on any web browser.
 
 ## Contributions
 
