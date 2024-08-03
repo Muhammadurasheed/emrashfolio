@@ -14,8 +14,7 @@ This website is built using the following technologies:
 - Home/About page: introduces myself and provides a brief overview of my skills and interests.
 - Project page: displays my past and current projects with descriptions and links to live demos, repositories and APK/playstore links.
 - Contact page: provides a contact form to send me a message or connect with me on social media.
-
-The Resume page lists my technical skills and programming languages with proficiency levels.
+- The Resume page lists my technical skills and programming languages with proficiency levels.
 
 ### Live chat
 
